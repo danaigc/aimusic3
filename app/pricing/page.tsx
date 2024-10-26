@@ -20,12 +20,6 @@ export default function PricingPage() {
 
       <div className="border-t relative z-10">
         <div className="py-12 md:py-24">
-          <h2 className="text-3xl font-bold text-center mb-4">
-            我们用户创作的音乐
-          </h2>
-          <p className="text-xl text-muted-foreground text-center mb-16">
-            聆听其他订阅用户创作的作品
-          </p>
           <MusicShowcase />
         </div>
       </div>

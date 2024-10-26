@@ -69,14 +69,18 @@ const featuredMusic: Track[] = [
 
 export function MusicShowcase() {
   return (
-      <section className="w-full px-4">
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 max-w-[2000px] mx-auto">
-          {featuredMusic.map((track, index) => (
-              <div key={index} className="break-inside-avoid mb-6">
-                <MusicCard {...track} />
-              </div>
-          ))}
-        </div>
-      </section>
+    <section className="w-full px-4">
+      <div className="text-center mb-12 mt-12">
+        <h2 className="text-3xl font-bold mb-4">Featured Creations</h2>
+        <p className="text-muted-foreground">Listen to what others have created with AI Music Lab</p>
+      </div>
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-6 max-w-[2000px] mx-auto">
+        {featuredMusic.map((track, index) => (
+          <div key={index} className="break-inside-avoid mb-6">
+            <MusicCard {...track} />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
